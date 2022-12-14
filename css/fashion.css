@@ -22,7 +22,7 @@ main {padding: 20px 15px;}
 main h2:not(#f1 h2) {margin-bottom: 20px; margin-top: 70px;}
 main p {text-align: justify;}
 
-#f1 ruby {display: inline-block; line-height:60%;}
+#f1 ruby {display: inline-block; line-height:100%;}
 #f1 p {margin-top: 15px;}
 #f1 p img {height: 130px; margin-left: 20px; margin-right: 10px; float: left;}
 #f1 figure img {border-radius: 20px; box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); margin-top: 20px;}
