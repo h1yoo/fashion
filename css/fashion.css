@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+*   {margin: 0; padding: 0; box-sizing: border-box;}
+html, body {font: 10pt/180% "나눔고딕", sans-serif; color: black;}
+html {scroll-behavior: smooth;}
+#layout {max-width: 550px; margin: auto; position: relative; overflow: hidden;}
+a {text-decoration: none; color: black;}
+img {max-width: 100%; display: block;/*이미지는 기본적으로 inline인데 그러면 문제가 많아서 block으로 변경*/}
+
+header {background-color: #db4437; color: white; display: flex; align-items: center;}
+header button.material-icons {padding:5px; margin-left: 10px; background:none; border: none; color: white; font-size: 2rem;}
+header h1 {flex: 1; text-align: center; padding: 20px 25px 10px 10px;}
+
+nav {background: black; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+     width:100%; height: 100%; position: absolute; display: none;
+}
+nav ul {list-style: inside url('../images/icon1.png');  height: 70vh; background: white;}
+nav li {border-bottom: 2px solid lightgray; padding: 25px;
+}
+
+main {padding: 20px 15px;}
+main h2:not(#f1 h2) {margin-bottom: 20px; margin-top: 70px;}
+main p {text-align: justify;}
+
+#f1 ruby {display: inline-block; line-height:60%;}
+#f1 p {margin-top: 15px;}
+#f1 p img {height: 130px; margin-left: 20px; margin-right: 10px; float: left;}
+#f1 figure img {border-radius: 20px; box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); margin-top: 20px;}
+#f1 figcaption {text-align: center; margin-top: 10px;}
+
+#f2 {margin-top: 70px;}
+
+#f3 ol {color: #db4437; margin-left: 15px; margin-bottom: 30px;}
+
+aside {background-color: rgba(219,68,55, 0.3); padding: 15px;}
+aside h3::before {content:url('../images/icon1.png'); margin-right: 7px;}
+aside h3:not(:first-of-type) {margin-top: 10px;}
+
+footer {background-color: #ddd; padding: 15px;}
+
+#topIcon {width: 30px; height: 30px; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+          background: white; position: fixed; bottom: 10px; right: 10px; text-align: center; padding-top: 2px;
+}
+
+/***************(큰 기계장치 : 최소너비 551픽셀 이상)********************/
+@media (min-width:551px) {
+     #topIcon {right: calc(((100% - 550px) / 2) + 10px);}
+}
